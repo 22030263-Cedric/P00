@@ -11,11 +11,15 @@ public class Calculator {
 		return a * b;
 	}
 	public int divide(int a , int b) {
-		if(a == 0 || b==0) {
-		return 0;
+		return a/b;
+	}
+	//Divide by 0, ErrorCondition
+	public Integer divideifError(int a , int b) {
+		if(b==0) {
+		return null;
 		}
 		else {
-			return a/b;
+			return b/a;
 		}
 	}
 }

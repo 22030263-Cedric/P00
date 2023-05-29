@@ -69,18 +69,21 @@ public class CalculatorTest {
 			int expected = 3250;
 			assertEquals (expected, actual);
 			}
-		//Divide by 0
-		public void testDivide0() {
-			int a = 0;
-			int b = 5500;
+		public void testDivideifError() {
+			int a = 9700;
+			int b = 0;
 				
 			Calculator cal = new Calculator();
-			int actual = cal.add(a, b); 
+			int actual = cal.divide(a, b); 
 				 
-			int expected = 0;
-			assertEquals (expected, actual);
+			
+			assertNull (actual);
 			}
-}
+		
+}	
+
+
+
 
 	
 
